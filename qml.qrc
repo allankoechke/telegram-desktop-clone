@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/main.qml</file>
+        <file>qml/components/LeftPanel.qml</file>
+        <file>qml/components/LeftDrawer.qml</file>
+        <file>qml/components/ChatViewPanel.qml</file>
+        <file>assets/fonts/fontawesome.otf</file>
+        <file>assets/fonts/Roboto-Regular.ttf</file>
+        <file>qml/widgets/Icon.qml</file>
+        <file>qml/widgets/AppLabel.qml</file>
+        <file>assets/images/group1</file>
+        <file>assets/images/user</file>
+        <file>assets/images/user2</file>
+        <file>assets/images/user3</file>
+        <file>assets/images/user4</file>
+        <file>qml/widgets/RoundedImage.qml</file>
+        <file>qml/widgets/MenuButton.qml</file>
+    </qresource>
+</RCC>
