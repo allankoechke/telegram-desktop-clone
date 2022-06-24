@@ -1,0 +1,9 @@
+.env
+*.pro.user
+build/
+*.moc
+*.exe
+*.o
+*.dll
+*.so
+*.db
