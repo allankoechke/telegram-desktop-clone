@@ -15,5 +15,7 @@
         <file>assets/images/user4</file>
         <file>qml/widgets/RoundedImage.qml</file>
         <file>qml/widgets/MenuButton.qml</file>
+        <file>qml/widgets/ChatlistDelegate.qml</file>
+        <file>qml/MockData.qml</file>
     </qresource>
 </RCC>

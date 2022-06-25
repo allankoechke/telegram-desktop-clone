@@ -8,6 +8,7 @@ Item {
     visible: true
 
     property alias source: img.source
+    property alias image: img
 
     Image {
         id: img

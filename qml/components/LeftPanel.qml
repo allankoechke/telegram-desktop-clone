@@ -3,12 +3,13 @@ import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.12
 
 import "../widgets"
+import "../"
 
 Rectangle {
     id: root
     width: 340
     height: app.height
-    color: "#1d252f"
+    color: "#17212b"
 
     Rectangle {
         id: header
@@ -67,11 +68,40 @@ Rectangle {
         anchors.bottom: parent.bottom
 
         ListView {
+            id: chatsListView
             anchors.fill: parent
+            spacing: 0
+            model: mockdata.chatsModel
+            currentIndex: -1
+            clip: true
+            delegate: ChatlistDelegate {
+                width: chatsListView.width
+                height: 80
+
+                chatId: uid
+                source: chatIcon
+                type: chatType
+                name: chatName
+                lastText: chatLastMessage
+                unreadBadgeCount: 0
+                isPinnedChat: false
+                lastTextDate: chatLastTextDate
+                isSelected: index === chatsListView.currentIndex
+
+                onClicked: {
+                    chatsListView.currentIndex = index
+
+                    // Open the chats
+                }
+            }
         }
     }
 
     LeftDrawer {
         id: leftDrawer
+    }
+
+    MockData {
+        id: mockdata
     }
 }

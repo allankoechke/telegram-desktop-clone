@@ -71,6 +71,7 @@ Rectangle {
                 checked: toggled
                 visible: showToggle
                 icon.color: 'red'
+                checkable: true
             }
         }
     }
